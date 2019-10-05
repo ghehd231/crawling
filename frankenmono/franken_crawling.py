@@ -32,6 +32,8 @@ def getDetail(href):
     table = soup.select('#detail_right > div > table tr')
 
     #--------코드 가져오기----------
+    code = soup.select('#detail_right > div > table > tr > td > span')
+    print(code[0].text)
     #
     # code = table[1].text
     # #strip() => str 변수의 모든 공백 제거
